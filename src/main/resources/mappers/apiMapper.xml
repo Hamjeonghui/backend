@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ham.backend.mapper.ApiMapper">
+    <select id="getList" resultType="String">
+		SELECT AREA_CODE FROM BIGWEB2.DB_MARINE_AREA_CODE WHERE AREA_CODE='S0000000'
+	</select>
+</mapper>
