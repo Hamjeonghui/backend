@@ -4,12 +4,14 @@ import com.ham.backend.service.ApiService;
 import com.ham.backend.service.YeboService;
 import com.ham.backend.vo.YeboVO;
 import jakarta.annotation.Resource;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -30,8 +32,7 @@ public class ApiController {
         vo.setYeboDate("2022-03-30");
         vo.setSchedule("nit");
 
-        List<YeboVO> yeboList= new ArrayList<YeboVO>();
-        yeboList=yeboService.getYeboList(vo);
+        List<HashMap<YeboVO,YeboVO>> yeboList=yeboService.getYeboList(vo);
         yeboObj.put("yeboObj", yeboList);
 
         return yeboObj.toString();

@@ -7,6 +7,7 @@ import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @Service("yeboService")
@@ -16,9 +17,8 @@ public class YeboServiceImpl implements YeboService {
     private YeboMapper yeboMapper;
 
     @Override
-    public List<YeboVO> getYeboList(YeboVO vo) throws Exception {
-        List<YeboVO> yeboList= new ArrayList<YeboVO>();
-        yeboList= yeboMapper.getYeboList(vo);
+    public List<HashMap<YeboVO,YeboVO>> getYeboList(YeboVO vo) throws Exception {
+        List<HashMap<YeboVO,YeboVO>> yeboList= yeboMapper.getYeboList(vo);
         return yeboList;
     }
 }
