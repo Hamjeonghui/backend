@@ -1,14 +1,16 @@
 package com.ham.backend.vo;
 
-import java.util.Date;
+import com.fasterxml.jackson.databind.PropertyNamingStrategy;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
+@JsonNaming(value = PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class YeboVO {
 
     // 멤버변수
     private String rk;
-    private Date yeboDate;
+    private String yeboDate;
     private String schedule;
-    private Date insDate;
+    private String insDate;
     private String yebo1;
     private String yebo2;
     private String weather1;
@@ -32,12 +34,20 @@ public class YeboVO {
         this.rk = rk;
     }
 
-    public Date getYeboDate() {
+    public String getYeboDate() {
         return yeboDate;
     }
 
-    public void setYeboDate(Date yeboDate) {
+    public void setYeboDate(String yeboDate) {
         this.yeboDate = yeboDate;
+    }
+
+    public String getInsDate() {
+        return insDate;
+    }
+
+    public void setInsDate(String insDate) {
+        this.insDate = insDate;
     }
 
     public String getSchedule() {
@@ -46,14 +56,6 @@ public class YeboVO {
 
     public void setSchedule(String schedule) {
         this.schedule = schedule;
-    }
-
-    public Date getInsDate() {
-        return insDate;
-    }
-
-    public void setInsDate(Date insDate) {
-        this.insDate = insDate;
     }
 
     public String getYebo1() {
@@ -165,9 +167,9 @@ public class YeboVO {
     public String toString() {
         return "YeboVO{" +
                 "rk='" + rk + '\'' +
-                ", yeboDate=" + yeboDate +
+                ", yeboLocalDate=" + yeboDate +
                 ", schedule='" + schedule + '\'' +
-                ", insDate=" + insDate +
+                ", insLocalDate=" + insDate +
                 ", yebo1='" + yebo1 + '\'' +
                 ", yebo2='" + yebo2 + '\'' +
                 ", weather1='" + weather1 + '\'' +

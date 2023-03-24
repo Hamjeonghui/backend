@@ -3,5 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.ham.backend.mapper.YeboMapper">
-
+    <select id="getYeboList" parameterType="com.ham.backend.vo.YeboVO" resultType="com.ham.backend.vo.YeboVO">
+        SELECT * FROM BIGWEB3.THE73_GYEBO_RECORD WHERE YEBODATE = TO_TIMESTAMP(#{yeboDate},'YYYY-MM-DD') AND SCHEDULE=#{schedule} ORDER BY RK DESC
+    </select>
 </mapper>
