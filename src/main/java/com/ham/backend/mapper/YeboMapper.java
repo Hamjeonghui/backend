@@ -11,4 +11,6 @@ public interface YeboMapper {
 
     public List<HashMap<YeboVO,YeboVO>> getYeboList (YeboVO vo) throws Exception;
 
+    public List<YeboVO> getAsk() throws Exception;
+
 }

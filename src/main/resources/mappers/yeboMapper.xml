@@ -6,4 +6,8 @@
     <select id="getYeboList" parameterType="com.ham.backend.vo.YeboVO" resultType="com.ham.backend.vo.YeboVO">
         SELECT * FROM BIGWEB3.THE73_GYEBO_RECORD WHERE YEBODATE = TO_TIMESTAMP(#{yeboDate},'YYYY-MM-DD') AND SCHEDULE=#{schedule} ORDER BY RK DESC
     </select>
+
+    <select id="getAsk" resultType="com.ham.backend.vo.YeboVO">
+        SELECT RK, YEBODATE, SCHEDULE, INSDATE, AGGR_CONCAT(YEBO1, '||') AS YEBO1, MAX(YEBO2) AS YEBO2 FROM BIGWEB3.WEATHER_DATA GROUP BY RK, YEBODATE, SCHEDULE, INSDATE
+    </select>
 </mapper>

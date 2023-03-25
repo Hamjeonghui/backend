@@ -1,9 +1,9 @@
 package com.ham.backend.vo;
 
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
-@JsonNaming(value = PropertyNamingStrategy.SnakeCaseStrategy.class)
+@JsonNaming(value = PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class YeboVO {
 
     // 멤버변수
@@ -165,24 +165,24 @@ public class YeboVO {
     //투스트링
     @Override
     public String toString() {
-        return "YeboVO{" +
-                "rk='" + rk + '\'' +
-                ", yeboLocalDate=" + yeboDate +
-                ", schedule='" + schedule + '\'' +
-                ", insLocalDate=" + insDate +
-                ", yebo1='" + yebo1 + '\'' +
-                ", yebo2='" + yebo2 + '\'' +
-                ", weather1='" + weather1 + '\'' +
-                ", wether2='" + wether2 + '\'' +
-                ", status1='" + status1 + '\'' +
-                ", status2='" + status2 + '\'' +
-                ", temp1='" + temp1 + '\'' +
-                ", temp2='" + temp2 + '\'' +
-                ", prcp1='" + prcp1 + '\'' +
-                ", prcp2='" + prcp2 + '\'' +
-                ", etcpr1='" + etcpr1 + '\'' +
-                ", etcpr2='" + etcpr2 + '\'' +
-                ", exist='" + exist + '\'' +
+        return "{" +
+                "rk:'" + rk + '\'' +
+                ", yeboDate:" + yeboDate +
+                ", schedule:'" + schedule + '\'' +
+                ", insDate:" + insDate +
+                ", yebo1:'" + yebo1 + '\'' +
+                ", yebo2:'" + yebo2 + '\'' +
+                ", weather1:'" + weather1 + '\'' +
+                ", wether2:'" + wether2 + '\'' +
+                ", status1:'" + status1 + '\'' +
+                ", status2:'" + status2 + '\'' +
+                ", temp1:'" + temp1 + '\'' +
+                ", temp2:'" + temp2 + '\'' +
+                ", prcp1:'" + prcp1 + '\'' +
+                ", prcp2:'" + prcp2 + '\'' +
+                ", etcpr1:'" + etcpr1 + '\'' +
+                ", etcpr2:'" + etcpr2 + '\'' +
+                ", exist:'" + exist + '\'' +
                 '}';
     }
 }

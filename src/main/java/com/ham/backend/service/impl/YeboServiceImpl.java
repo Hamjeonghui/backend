@@ -21,4 +21,10 @@ public class YeboServiceImpl implements YeboService {
         List<HashMap<YeboVO,YeboVO>> yeboList= yeboMapper.getYeboList(vo);
         return yeboList;
     }
+
+    @Override
+    public List<YeboVO> getAsk() throws Exception {
+        List<YeboVO> yeboList= yeboMapper.getAsk();
+        return yeboList;
+    }
 }

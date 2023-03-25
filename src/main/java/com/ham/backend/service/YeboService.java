@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface YeboService {
     public List<HashMap<YeboVO,YeboVO>> getYeboList(YeboVO vo) throws Exception;
+    public List<YeboVO> getAsk() throws Exception;
 }
