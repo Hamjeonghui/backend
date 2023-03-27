@@ -36,8 +36,8 @@ public class ApiController {
     }
 
     @GetMapping("/ask")
-    public List<YeboVO> ask(List<YeboVO> yeboList) throws Exception {
-        yeboList=yeboService.getAsk();
+    public List<YeboVO> ask() throws Exception {
+        List<YeboVO> yeboList=yeboService.getAsk();
         return yeboList;
     }
 
