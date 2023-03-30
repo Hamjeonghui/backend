@@ -119,6 +119,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/YEBO.vue?vue&type=script&lang=js":
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/YEBO.vue?vue&type=script&lang=js ***!
+  \*********************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"./node_modules/axios/lib/axios.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  name: \"YEBO\",\n  data() {\n    return {\n      data: []\n    };\n  },\n  created() {\n    this.fetchData();\n  },\n  methods: {\n    async fetchData() {\n      try {\n        const response = await axios__WEBPACK_IMPORTED_MODULE_0__[\"default\"].get('/ask');\n        this.data = response.data; // 받아온 데이터를 Vue의 data에 저장합니다.\n        console.log(this.data);\n      } catch (error) {\n        console.error(error);\n      }\n    }\n  }\n});\n\n//# sourceURL=webpack://vue/./src/views/YEBO.vue?./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use%5B0%5D!./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D.use%5B0%5D");
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/App.vue?vue&type=template&id=7ba5bd90":
 /*!******************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/App.vue?vue&type=template&id=7ba5bd90 ***!
@@ -225,7 +236,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": function() { return /* binding */ render; }\n/* harmony export */ });\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n\nconst _hoisted_1 = {\n  id: \"contentWrap\"\n};\nfunction render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_TopBox = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)(\"TopBox\");\n  const _component_ContentBox = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)(\"ContentBox\");\n  const _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)(\"router-link\");\n  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_TopBox, {\n    \"user-data\": $data.userData\n  }, null, 8 /* PROPS */, [\"user-data\"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)(\"div\", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ContentBox, {\n    \"user-data\": $data.userData\n  }, null, 8 /* PROPS */, [\"user-data\"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {\n    to: \"/home\"\n  }, {\n    default: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(() => [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(\"home\")]),\n    _: 1 /* STABLE */\n  })])], 64 /* STABLE_FRAGMENT */);\n}\n\n//# sourceURL=webpack://vue/./src/views/MainPage.vue?./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use%5B0%5D!./node_modules/vue-loader/dist/templateLoader.js??ruleSet%5B1%5D.rules%5B3%5D!./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D.use%5B0%5D");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": function() { return /* binding */ render; }\n/* harmony export */ });\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n\nconst _hoisted_1 = {\n  id: \"contentWrap\"\n};\nfunction render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_TopBox = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)(\"TopBox\");\n  const _component_ContentBox = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)(\"ContentBox\");\n  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_TopBox, {\n    \"user-data\": $data.userData\n  }, null, 8 /* PROPS */, [\"user-data\"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)(\"div\", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ContentBox, {\n    \"user-data\": $data.userData\n  }, null, 8 /* PROPS */, [\"user-data\"])])], 64 /* STABLE_FRAGMENT */);\n}\n\n//# sourceURL=webpack://vue/./src/views/MainPage.vue?./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use%5B0%5D!./node_modules/vue-loader/dist/templateLoader.js??ruleSet%5B1%5D.rules%5B3%5D!./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D.use%5B0%5D");
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/YEBO.vue?vue&type=template&id=7024faf3":
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/YEBO.vue?vue&type=template&id=7024faf3 ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": function() { return /* binding */ render; }\n/* harmony export */ });\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n\nconst _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)(\"div\", {\n  id: \"wrap\"\n}, \" 와 ! \", -1 /* HOISTED */);\n\nfunction render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_router_view = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)(\"router-view\");\n  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_router_view, null, {\n    default: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(() => [_hoisted_1]),\n    _: 1 /* STABLE */\n  });\n}\n\n//# sourceURL=webpack://vue/./src/views/YEBO.vue?./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use%5B0%5D!./node_modules/vue-loader/dist/templateLoader.js??ruleSet%5B1%5D.rules%5B3%5D!./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D.use%5B0%5D");
 
 /***/ }),
 
@@ -236,7 +258,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue */ \"./src/App.vue\");\n/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/router */ \"./src/router.js\");\n\n\n\n(0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_App_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"]).use(_router__WEBPACK_IMPORTED_MODULE_2__[\"default\"]).mount('#app');\n\n//# sourceURL=webpack://vue/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue */ \"./src/App.vue\");\n/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/mixins */ \"./src/mixins.js\");\n/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/router */ \"./src/router.js\");\n\n\n\n\nconst app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_App_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\napp.use(_router__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\napp.mixin(_mixins__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\napp.mount('#app');\n\n//# sourceURL=webpack://vue/./src/main.js?");
+
+/***/ }),
+
+/***/ "./src/mixins.js":
+/*!***********************!*\
+  !*** ./src/mixins.js ***!
+  \***********************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"./node_modules/axios/lib/axios.js\");\n // ajax대신\n\n// 해당 파일에서 전체 컴포에서 공통적으로 사용할 데이터 바인딩처리 로직을 관리한다.\n// 기본 CRUD는 일반적으로 전체 컴포에서 일어나므로, 이곳에 정의하는 것이 맞다.\n// 파일 생성 후 main.js에 import를 해줄 필요가 있다.\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  methods: {\n    // 함수를 비동기 함수로 만들어주는 예약어.\n    // 이 함수가 호출됨으로써 메서드의 코드를 순차적으로 실행하지 않고,\n    // 코드 실행 중 await가 있는 곳에서 일시적으로 코드 실행 중단 후,\n    // await단이 처리되면 그 후 결과값을 반환한다.\n    // axiod가 비동기니까, 얘를 동기처럼 하게 해줌\n    // 이 메서드를 다른 컴포에서도 공통으로 쓰려면 api요청 후에\n    // 데이터 도착을 기다려야 한다. 그래서 동기적으로 변환되게 함.\n    // ajax에서는 데이터 오기 전에 다른 코드들도 실행해야 해서 비동기를 썼지만\n    // 여기서는 위와 같은 설명 때문에 굳이 비동기적메서드를 동기적인 특성으로 변경해서 사용한다.\n    async $callApi(url, method, data) {\n      return (await (0,axios__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({\n        method: method,\n        url,\n        data\n      }).catch(e => {\n        console.log(e);\n      })).data;\n    }\n  }\n}); //뭔소리여;;;;;;;;;;\n\n//# sourceURL=webpack://vue/./src/mixins.js?");
 
 /***/ }),
 
@@ -247,7 +280,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue_
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ \"./node_modules/vue-router/dist/vue-router.mjs\");\n/* harmony import */ var _views_MainPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/views/MainPage */ \"./src/views/MainPage.vue\");\n/* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/views/Home */ \"./src/views/Home.vue\");\n/* harmony import */ var _views_ErrorPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/views/ErrorPage */ \"./src/views/ErrorPage.vue\");\n\n\n\n\nconst router = (0,vue_router__WEBPACK_IMPORTED_MODULE_3__.createRouter)({\n  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_3__.createWebHistory)(),\n  routes: [\n  // path별 component를 추가한다.\n  {\n    path: \"/\",\n    name: \"main\",\n    component: _views_MainPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\n  }, {\n    path: \"/home\",\n    name: \"home\",\n    component: _views_Home__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n  }, {\n    path: \"/error\",\n    name: \"not-found\",\n    component: _views_ErrorPage__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n  }]\n});\n/* harmony default export */ __webpack_exports__[\"default\"] = (router);\n\n//# sourceURL=webpack://vue/./src/router.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-router */ \"./node_modules/vue-router/dist/vue-router.mjs\");\n/* harmony import */ var _views_MainPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/views/MainPage */ \"./src/views/MainPage.vue\");\n/* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/views/Home */ \"./src/views/Home.vue\");\n/* harmony import */ var _views_ErrorPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/views/ErrorPage */ \"./src/views/ErrorPage.vue\");\n/* harmony import */ var _views_YEBO__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/views/YEBO */ \"./src/views/YEBO.vue\");\n\n\n\n\n\nconst router = (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.createRouter)({\n  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.createWebHistory)(),\n  routes: [\n  // path별 component를 추가한다.\n  {\n    path: \"/\",\n    name: \"main\",\n    component: _views_MainPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\n  }, {\n    path: \"/home\",\n    name: \"home\",\n    component: _views_Home__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n  }, {\n    path: \"/error\",\n    name: \"not-found\",\n    component: _views_ErrorPage__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n  }, {\n    path: \"/yebovue\",\n    name: \"yebo\",\n    component: _views_YEBO__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n  }]\n});\n/* harmony default export */ __webpack_exports__[\"default\"] = (router);\n\n//# sourceURL=webpack://vue/./src/router.js?");
 
 /***/ }),
 
@@ -438,6 +471,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Mai
 
 /***/ }),
 
+/***/ "./src/views/YEBO.vue":
+/*!****************************!*\
+  !*** ./src/views/YEBO.vue ***!
+  \****************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _YEBO_vue_vue_type_template_id_7024faf3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./YEBO.vue?vue&type=template&id=7024faf3 */ \"./src/views/YEBO.vue?vue&type=template&id=7024faf3\");\n/* harmony import */ var _YEBO_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./YEBO.vue?vue&type=script&lang=js */ \"./src/views/YEBO.vue?vue&type=script&lang=js\");\n/* harmony import */ var C_Users_wizai_IdeaProjects_vue_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ \"./node_modules/vue-loader/dist/exportHelper.js\");\n\n\n\n\n;\nconst __exports__ = /*#__PURE__*/(0,C_Users_wizai_IdeaProjects_vue_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(_YEBO_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"], [['render',_YEBO_vue_vue_type_template_id_7024faf3__WEBPACK_IMPORTED_MODULE_0__.render],['__file',\"src/views/YEBO.vue\"]])\n/* hot reload */\nif (false) {}\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (__exports__);\n\n//# sourceURL=webpack://vue/./src/views/YEBO.vue?");
+
+/***/ }),
+
 /***/ "./src/App.vue?vue&type=script&lang=js":
 /*!*********************************************!*\
   !*** ./src/App.vue?vue&type=script&lang=js ***!
@@ -548,6 +592,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/views/YEBO.vue?vue&type=script&lang=js":
+/*!****************************************************!*\
+  !*** ./src/views/YEBO.vue?vue&type=script&lang=js ***!
+  \****************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_40_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_YEBO_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; }\n/* harmony export */ });\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_40_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_YEBO_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./YEBO.vue?vue&type=script&lang=js */ \"./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/YEBO.vue?vue&type=script&lang=js\");\n \n\n//# sourceURL=webpack://vue/./src/views/YEBO.vue?");
+
+/***/ }),
+
 /***/ "./src/App.vue?vue&type=template&id=7ba5bd90":
 /*!***************************************************!*\
   !*** ./src/App.vue?vue&type=template&id=7ba5bd90 ***!
@@ -655,6 +710,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": function() { return /* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_40_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainPage_vue_vue_type_template_id_03d9b622__WEBPACK_IMPORTED_MODULE_0__.render; }\n/* harmony export */ });\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_40_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainPage_vue_vue_type_template_id_03d9b622__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./MainPage.vue?vue&type=template&id=03d9b622 */ \"./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/MainPage.vue?vue&type=template&id=03d9b622\");\n\n\n//# sourceURL=webpack://vue/./src/views/MainPage.vue?");
+
+/***/ }),
+
+/***/ "./src/views/YEBO.vue?vue&type=template&id=7024faf3":
+/*!**********************************************************!*\
+  !*** ./src/views/YEBO.vue?vue&type=template&id=7024faf3 ***!
+  \**********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": function() { return /* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_40_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_YEBO_vue_vue_type_template_id_7024faf3__WEBPACK_IMPORTED_MODULE_0__.render; }\n/* harmony export */ });\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_40_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_YEBO_vue_vue_type_template_id_7024faf3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./YEBO.vue?vue&type=template&id=7024faf3 */ \"./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/YEBO.vue?vue&type=template&id=7024faf3\");\n\n\n//# sourceURL=webpack://vue/./src/views/YEBO.vue?");
 
 /***/ }),
 
